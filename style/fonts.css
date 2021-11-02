@@ -31,19 +31,19 @@
 }
 
 @font-face {
-    font-family: 'fontAwesome light';
+    font-family: 'fontAwesome-light';
     src: url('../fonts/fontAwesome/fa-light-300.woff2');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'fontAwesome regular';
+    font-family: 'fontAwesome-regular';
     src: url('../fonts/fontAwesome/fa-regular-400.woff2');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'fontAwesome solid';
+    font-family: 'fontAwesome-solid';
     src: url('../fonts/fontAwesome/fa-solid-900.woff2');
     font-weight: 900;
 }
@@ -60,10 +60,10 @@
     font-weight: 400;
 }
 
-.fas
-.fa
-.far
+.fas,
+.fa,
+.far,
 .fal {
-    font-family: 'fontAwesome';
+    font-family: 'fontAwesome-regular';
     font-style: normal;
 }

@@ -23,6 +23,10 @@ body{
 
 .nav-link{
     color: var(--white);
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    font-family: var(--NSRegular);
 }
 
 .nav-link:hover{
@@ -43,12 +47,24 @@ body{
     content: '\f879';
 }
 
+.header__nav-cartIcon{
+    font-size: 15px;
+}
+
 .header__nav-signIcon::before{
     content: '\f007';
 }
 
+.header__nav-cartIcon{
+    font-size: 15px;
+}
+
 .header__nav-cartIcon::before{
     content: '\f07a';
+}
+
+.header__nav-cartIcon{
+    font-size: 17px;
 }
 
 .header__content-list{
@@ -80,5 +96,108 @@ body{
     color: var(--white);
 }
 
+.nav-item{
+    display: flex;
+}
 
+.header__content-cellPhones{
+    width: 300px;
+}
+
+.header__content-cp{
+    margin: 0px 20px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background: #ABABAB;
+}
+
+.carousel-indicators [data-bs-target].active{
+    background-color: var(--black);
+}
+
+.carousel-indicators [data-bs-target]:nth-of-type(1){
+    margin-right: 20px;
+}
 /* ----------------------------HEADER END------------------------ */
+
+/* ----------------------------MAIN START------------------------ */
+
+.main__content-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main__content-items:nth-of-type(1){
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main__content-items:nth-of-type(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.main__content-item{
+    background-color: rgb(240, 240, 240);
+}
+
+.grid-items{
+    height: 235px;
+}
+
+
+
+.main__item-img1{
+    width: 530px;
+    filter: drop-shadow(-10px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.per-1{
+    top: 127%;
+    left: 8%;
+}
+
+.per-2{
+    top: 127%;
+    left: 43%;
+}
+
+.main__item-persentage{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 70px;
+    color: var(--white);
+    font-family: var(--NSRegular);
+    background-color: var(--black);
+    text-align: center  ;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+ 
+}
+
+.main__item-title{
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--black);
+    font-family: var(--NSSemiBold);
+}
+
+.main__item-title:hover{
+    color: var(--black);
+}
+
+
+
+
+
+/* ----------------------------MAIN END------------------------ */
+/* ----------------------------FOOTER START------------------------ */
+/* ----------------------------FOOTER END------------------------ */

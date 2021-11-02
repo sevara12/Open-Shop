@@ -28,12 +28,18 @@
                   </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link header__nav-telIcon far" href="#">(907) 555-0101</a>
+                <a class="nav-link header__nav-telIcon far" href="#"></a>
+                <a class="nav-link header__nav-list" href="#">(907) 555-0101</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link header__nav-signIcon fal" href="#">Sign in</a>
-                <li class="nav-item">
-                    <a class="nav-link header__nav-cartIcon far" href="#">Cart</a>
+                <a class="nav-link header__nav-signIcon fal" href="#"></a>
+                <a class="nav-link header__nav-list" href="#">Sign in</a>
+               </li>  
+
+                <li class="nav-item header__nav-list">
+                    <a class="nav-link header__nav-cartIcon far" href="#"></a>
+                    <a class="nav-link header__nav-list" href="#">Cart</a>
                 </li>
             </ul>
           </div>
@@ -63,10 +69,28 @@
                     <a class="nav-link active dropdown-toggle header__content-list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Cell Phones&Tablets
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu header__content-cellPhones d-flex " aria-labelledby="navbarDropdownMenuLink">
+                      <div class="header__content-cp">
+                        <h4>Cell Phones</h4>
+                        <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                        <li><a class="dropdown-item" href="#">Apple</a></li>
+                        <li><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li><a class="dropdown-item" href="#">Huawei</a></li>
+                        <li><a class="dropdown-item" href="#">BQ</a></li>
+                        <li><a class="dropdown-item" href="#">Nokia</a></li>
+                        <li><a class="dropdown-item" href="#">Inoi</a></li>
+                        <li><a class="dropdown-item" href="#">Vivo</a></li>
+                      </div>
+
+                      <div class="header__content-tab">
+                        <h4>Tablets</h4>
+                        <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                        <li><a class="dropdown-item" href="#">Apple</a></li>
+                        <li><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li><a class="dropdown-item" href="#">Huawei</a></li>
+                        <li><a class="dropdown-item" href="#">BQ</a></li>
+                        <li><a class="dropdown-item" href="#">More...</a></li>
+                      </div>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -90,24 +114,17 @@
             </div>
           </nav>
 
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="header__content-slide d-flex align-items-center">
-                   <div class="header__slide-left">
-                     <a href=""><img src="images/first slide header.png" alt=""></a>
-                  </div>  
-                  <div class="header__slide-right d-flex align-items-center flex-column">
-                   <h3 class="header__right-title">Color your days with small joy</h3>
-                   <a href="" class="header__right-button">SHOP NOW</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item ">
-                <div class="header__content-slide d-flex align-items-center">
                   <div class="header__slide-left">
-                    <a href=""><img src="images/second slide.png" alt=""></a>
+                    <a href=""><img src="images/first slide header.png" alt=""></a>
                  </div>  
                  <div class="header__slide-right d-flex align-items-center flex-column">
                   <h3 class="header__right-title">Color your days with small joy</h3>
@@ -115,18 +132,65 @@
                  </div>
                </div>
               </div>
+              <div class="carousel-item">
+               <div class="header__content-slide d-flex align-items-center">  
+                <div class="header__slide-left">
+                  <a href=""><img src="images/second slide.png" alt=""></a>
+               </div>  
+               <div class="header__slide-right d-flex align-items-center flex-column">
+                <h3 class="header__right-title">Color your days with small joy</h3>
+                <a href="" class="header__right-button">SHOP NOW</a>
+               </div>
+               </div>
+             </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
       </header>
+
+
+      <main class="main__content">
+        <div class="container">
+          <div class="main__content-items">
+            <div class="main__content-item">
+              <p class="main__item-persentage per-1">-57%</p>
+              <img src="images/sunto watch.png" alt="" class="main__item-img1">
+              <a href="" class="main__item-title"><h4>Suunto SS050143000</h4></a>
+              <p class="main__item-price">70$</p>
+            </div>
+
+            <div class="main__content-item grid-items">
+              <p class="main__item-persentage per-2">-30%</p>
+              <img src="images/airpods.png" alt="" class="main__item-img">
+              <a href="" class="main__item-title"><h4>Airpods 2.1</h4></a>
+              <p class="main__item-price">95$</p>
+            </div>
+
+            <div class="main__content-item grid-items">
+              <a href="" class="main__item-title"><h4>Xiaomi Mi Power Bank 2s 10000</h4></a>
+              <p class="main__item-price">9$</p>
+              <p class="main__item-persentage per-3">-20%</p>
+              <img src="images/power bank.png" alt="" class="main__item-img">
+            </div>
+
+            <div class="main__content-item grid-items">
+              <a href="" class="main__item-title"><h4>Remax RP-W1 White</h4></a>
+              <p class="main__item-price">11$</p>
+              <p class="main__item-persentage per-4">-10%</p>
+              <img src="images/remax.png" alt="" class="main__item-img">
+            </div>
+          </div>
+        </div>
+      </main>
 
 
 
