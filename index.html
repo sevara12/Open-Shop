@@ -69,27 +69,29 @@
                     <a class="nav-link active dropdown-toggle header__content-list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Cell Phones&Tablets
                     </a>
-                    <ul class="dropdown-menu header__content-cellPhones d-flex " aria-labelledby="navbarDropdownMenuLink">
-                      <div class="header__content-cp">
-                        <h4>Cell Phones</h4>
-                        <li><a class="dropdown-item" href="#">Xiomi</a></li>
-                        <li><a class="dropdown-item" href="#">Apple</a></li>
-                        <li><a class="dropdown-item" href="#">Samsung</a></li>
-                        <li><a class="dropdown-item" href="#">Huawei</a></li>
-                        <li><a class="dropdown-item" href="#">BQ</a></li>
-                        <li><a class="dropdown-item" href="#">Nokia</a></li>
-                        <li><a class="dropdown-item" href="#">Inoi</a></li>
-                        <li><a class="dropdown-item" href="#">Vivo</a></li>
-                      </div>
-
-                      <div class="header__content-tab">
-                        <h4>Tablets</h4>
-                        <li><a class="dropdown-item" href="#">Xiomi</a></li>
-                        <li><a class="dropdown-item" href="#">Apple</a></li>
-                        <li><a class="dropdown-item" href="#">Samsung</a></li>
-                        <li><a class="dropdown-item" href="#">Huawei</a></li>
-                        <li><a class="dropdown-item" href="#">BQ</a></li>
-                        <li><a class="dropdown-item" href="#">More...</a></li>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                      <div class="d-flex">
+                        <div class="header__content-cp">
+                          <h4>Cell Phones</h4>
+                          <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                          <li><a class="dropdown-item" href="#">Apple</a></li>
+                          <li><a class="dropdown-item" href="#">Samsung</a></li>
+                          <li><a class="dropdown-item" href="#">Huawei</a></li>
+                          <li><a class="dropdown-item" href="#">BQ</a></li>
+                          <li><a class="dropdown-item" href="#">Nokia</a></li>
+                          <li><a class="dropdown-item" href="#">Inoi</a></li>
+                          <li><a class="dropdown-item" href="#">Vivo</a></li>
+                        </div>
+  
+                        <div class="header__content-tab">
+                          <h4>Tablets</h4>
+                          <li><a class="dropdown-item" href="#">Xiomi</a></li>
+                          <li><a class="dropdown-item" href="#">Apple</a></li>
+                          <li><a class="dropdown-item" href="#">Samsung</a></li>
+                          <li><a class="dropdown-item" href="#">Huawei</a></li>
+                          <li><a class="dropdown-item" href="#">BQ</a></li>
+                          <li><a class="dropdown-item" href="#">More...</a></li>
+                        </div>
                       </div>
                     </ul>
                   </li>
@@ -157,37 +159,54 @@
         </div>
       </header>
 
-
-      <main class="main__content">
+           
+      <main class="main">
         <div class="container">
+        <div class="main__content position-relative">
           <div class="main__content-items">
-            <div class="main__content-item">
-              <p class="main__item-persentage per-1">-57%</p>
-              <img src="images/sunto watch.png" alt="" class="main__item-img1">
-              <a href="" class="main__item-title"><h4>Suunto SS050143000</h4></a>
-              <p class="main__item-price">70$</p>
+              <img src="images/sunto watch.png" alt="">
+              <div class="main__items-about position-absolute top-0">
+                <p class="main__item-per">-57%</p>
+                <div>
+                  <a href="" class="main__item-title">Suunto SS050143000</a>
+                  <p class="main__item-price">70$</p>
+                </div>
             </div>
+          </div>
 
-            <div class="main__content-item grid-items">
-              <p class="main__item-persentage per-2">-30%</p>
-              <img src="images/airpods.png" alt="" class="main__item-img">
-              <a href="" class="main__item-title"><h4>Airpods 2.1</h4></a>
-              <p class="main__item-price">95$</p>
-            </div>
+          <div class="main__content-items">
+            <img src="images/airpods.png" alt="">
+            <div class="main__items-about">
+              <p class="main__item-per">-30%</p>
+              <div>
+                <a href="" class="main__item-title">Airpods 2.1</a>
+                <p class="main__item-price">95$</p>
+              </div>
+          </div>
+        </div>
 
-            <div class="main__content-item grid-items">
-              <a href="" class="main__item-title"><h4>Xiaomi Mi Power Bank 2s 10000</h4></a>
-              <p class="main__item-price">9$</p>
-              <p class="main__item-persentage per-3">-20%</p>
-              <img src="images/power bank.png" alt="" class="main__item-img">
+          <div class="main__content-items">
+              <img src="images/power bank.png" alt="">
+              <div class="main__items-about">
+                <p class="main__item-per">-57%</p>
+                <div>
+                  <a href="" class="main__item-title">Xiaomi Mi Power Bank 2s 10000</a>
+                  <p class="main__item-price">9$</p>
+                </div>
             </div>
+          </div>
 
-            <div class="main__content-item grid-items">
-              <a href="" class="main__item-title"><h4>Remax RP-W1 White</h4></a>
-              <p class="main__item-price">11$</p>
-              <p class="main__item-persentage per-4">-10%</p>
-              <img src="images/remax.png" alt="" class="main__item-img">
+
+          <div class="main__content-items">
+              <img src="images/remax.png" alt="">
+              <div class="main__items-about">
+                <p class="main__item-per">-57%</p>
+                <div>
+                  <a href="" class="main__item-title">Remax RP-W1 White</a>
+                  <p class="main__item-price">11$</p>
+                </div>
             </div>
+          </div>
           </div>
         </div>
       </main>
