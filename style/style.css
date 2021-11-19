@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: #E5E5E5;
+    background-color: var(--white);
 }
 
 /* ------------------HEADER START-------------------------- */
@@ -123,33 +123,19 @@ body{
 .carousel-indicators [data-bs-target]:nth-of-type(1){
     margin-right: 20px;
 }
+
+.dropdown__title{
+    color: var(--black);
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline !important;
+}
 /* ----------------------------HEADER END------------------------ */
 
 /* ----------------------------MAIN START------------------------ */
 
-.main__content{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   gap: 30px;
-   margin-bottom: 30px;
-   height: 600px;
-}
-
-.main__content-items:nth-of-type(1){
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.main__content-items:nth-of-type(2){
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.main__content-items{
-    background: url('../images/grey\ background.png');
-    height: 550px;
-}
 
 .main__items-about{
     display: flex;
@@ -160,7 +146,7 @@ body{
     padding: 20px;
 }
 
-.main__item-per{
+.main__items-per{
     color: var(--white);
     background-color: var(--black);
     border-radius: 50%;
@@ -170,19 +156,19 @@ body{
     padding: 13px 0;
 }
 
-.main__item-title{
-    display: block;
+.main__items-title{
+    display: inline-block;
     color: var(--black);
     font-size: 24px;
-    line-height: 40px;
+    line-height: 30px;
     font-family: var(--NSSemiBold);
 }
 
-.main__item-title:hover{
+.main__items-title:hover{
     color: var(--black);
 }
 
-.main__item-price{
+.main__items-price{
     color: var(--black);
     font-size: 24px;
     line-height: 70px;
@@ -190,6 +176,199 @@ body{
     bottom: 0;
 }
 
+.main__items-img{
+    margin-bottom: 40px;
+}
+
+.third-item{
+    width: 280px;
+}
+
+.main__content{
+    background-color: #F5F5F5;
+}
+
+.main__about{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.main__content:nth-of-type(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.main__content:nth-of-type(2){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.main__button{
+    display: block;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 20px;
+    line-height: 50px;
+    font-family: var(--NSRegular);
+    text-align: center;
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main__button:hover{
+    color: var(--white);
+}
+
+
+/* -----------------------GADGETS/IPHONES/LAPTOPS/COMPUTERS--------------------------------- */
+.items__content-title{
+    color: var(--black);
+    font-size: 16px;
+    line-height: 18px;
+    font-family: var(--NSSemiBold);
+    text-align: center;
+}
+
+.items__content-price{
+    color: var(--black);
+    text-align: center;
+}
+
+.extra{
+    position: absolute;
+    top: 240px;
+}
+
+.items__content-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.items__content-mainTitle{
+    color: var(--black);
+    font-size: 36px;
+    line-height: 49px;
+    font-family: var(--NSSemiBold);
+    margin-bottom: 30px;
+}
+
+.items__content-item{
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------PLAYSTATION------------------------------- */
+
+.playstation__text{
+    color: var(--black);
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    font-family: var(--NSSemiBold);
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.playstation__left{
+    top: 120px;
+}
+
+.playstation__button{
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 18px;
+    line-height: 25px;
+    font-family: var(--NSRegular);
+    padding: 13px 40px;
+}
+
+.playstation__button:hover{
+    color: var(--white);
+}
 /* ----------------------------MAIN END------------------------ */
+
 /* ----------------------------FOOTER START------------------------ */
+
+.footer__telegram::before{
+    content: '\f3fe';
+}
+
+.footer__facebook::before{
+    content: '\f09a';
+}
+
+.footer__instagram::before{
+    content: '\f16d';
+}
+
+.footer__icon{
+    color: var(--white);
+    font-size: 41px;
+    margin-right: 23px;
+}
+
+.footer{
+    background-color: var(--black);
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.footer__content-text{
+    color: var(--white);
+    font-size: 18px;
+    line-height: 25px;
+    font-family: var(--NSRegular);
+}
+
+.btn-outline-success{
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-outline-success:hover{
+    background-color: var(--black);
+}
+/* -------------XBOX----------------------------- */
+.xbox__text{
+    position: absolute;
+    top: 40px;
+}
+
+.xbox__title{
+    color: var(--black);
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+    font-family: var(--NSSemiBold);
+}
+
+.xbox__description{
+    color: var(--black);
+    font-size: 24px;
+    line-height: 33px;
+    font-family: var(--NSRegular);
+    max-width: 454px;
+    width: 100%;
+}
+
+.position-absolute{
+   bottom: -40px;
+   left: 20px;
+}
+
+.main__xbox{
+    margin-bottom: 60px;
+}
+
 /* ----------------------------FOOTER END------------------------ */

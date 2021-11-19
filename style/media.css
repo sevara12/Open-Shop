@@ -1,0 +1,32 @@
+@media(prefers-color-scheme: dark){
+    :root{
+        --primary-background: #313131;
+        --primary-text-color: #FFFFFF;
+    }
+
+
+    .header__nav-logo::before{
+        content: url('../images/logo-dark.png');
+    }
+
+    body{
+        background-color: var(--primary-background);
+    }
+
+    .header__content-list, .header__right-title, .items__content-title, .items__content-price, .playstation__text{
+        color: var(--primary-text-color);
+    }
+
+    .header__right-button, .main__button, .playstation__button{
+        border: 1px solid var(--primary-text-color);
+    }
+
+    .carousel-indicators [data-bs-target]{
+        background-color: var(--primary-text-color);
+    }
+
+    .footer{
+        background-color: black;
+    }
+
+}
